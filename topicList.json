@@ -68,5 +68,21 @@
       "name": "Dhyey Bhavsar",
       "number": "123-456-7890"
     }
+  },
+  {
+    "event": "BLM Tokyo",
+    "tags": [
+      "Social Justice",
+      "Black Lives",
+      "Protest"
+    ],
+    "location": "",
+    "date": "",
+    "time": "",
+    "description": "This is an event",
+    "organizer": {
+      "name": "",
+      "number": ""
+    }
   }
 ]
