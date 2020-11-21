@@ -101,7 +101,18 @@ app.get('/topics/:event/allPosts', (req, res) => {
 });
 
 app.post('/topics', jsonParser, (req, res) => {
-    let newSchedule = {
+  let exsists = false;
+
+  for (var i = 0; i < topics.length; i++) {
+    if (topics[i].event === req.body.event) {
+      exsists = true;
+    }
+  }
+
+  if (exsists == true) {
+    return res.status(401).send("A schedule with the given name already exsists!");
+  } else {
+    let newEvent = {
       event: req.body.event,
       tags: req.body.tags,
       location: req.body.location,
@@ -113,7 +124,7 @@ app.post('/topics', jsonParser, (req, res) => {
         number: req.body.organizer.number
       }
     };
-    topics.push(newSchedule);
+    topics.push(newEvent);
 
     let data = JSON.stringify(topics, null, 2);
     fs.writeFile('topicList.json', data, finished);
@@ -122,5 +133,6 @@ app.post('/topics', jsonParser, (req, res) => {
       console.log('New event added succssfully!');
     }
 
-    res.send(newSchedule);
+    res.send(newEvent);
+  }
 });
