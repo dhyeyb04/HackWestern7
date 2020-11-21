@@ -78,7 +78,7 @@ app.get('/topics/:event', (req, res) => {
   }
 
   if (output.length == 0) {
-    return res.status(404).send("The course with the given subject code was not found.");
+    return res.status(404).send("The event with the given name was not found.");
   }
   
   res.send(output);
