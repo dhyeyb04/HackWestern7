@@ -1,7 +1,7 @@
 [
   {
     "event": "BLM Toronto",
-    "category": "Social Justice",
+    "tags": ["Social Justice", "Black Lives", "Protest"],
     "location": "5444 Meadowcrest Avenue",
     "date": "February 29, 2021",
     "time": "5:00 pm",
@@ -14,12 +14,14 @@
       {
         "postID": 1,
         "user": "Dhyey Bhavsar",
-        "content": "This is a post"
+        "content": "This is a post",
+        "followers": "Harsh Patel, Nirmit Shah"
       },
       {
         "postID": 2,
         "user": "Harsh Patel",
-        "content": "This is a second post"
+        "content": "This is a second post",
+        "followers": "Dhyey Bhavsar, Nirmit Shah"
       }
     ]
   },
@@ -27,8 +29,8 @@
     "event": "BLM London",
     "category": "Social Justice",
     "location": "5444 Meadowcrest Avenue",
-    "date": "February 29, 2021",
-    "time": "5:00 pm",
+    "date": "",
+    "time": "",
     "description": "This is an event",
     "organizer": {
       "name": "Dhyey Bhavsar",

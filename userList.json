@@ -2,7 +2,8 @@
     {
         "email": "dhyeybhavsar2000@gmail.com",
         "password": "Dhyey-2000",
-        "name": "Dhyey Bhavsar"
+        "name": "Dhyey Bhavsar",
+        "followedPosts": [2, 3]
     },
     {
         "email": "hpate45@gmail.com",
