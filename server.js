@@ -15,6 +15,10 @@ app.get('/', (req, res) => {
 
 });
 
+app.get('/featured', (req, res) => {
+  res.sendFile(__dirname + '/templates/featured.html')
+});
+
 app.listen(port, (err) => {
   if (err) {
     return console.log('Something bad happened...', err)
