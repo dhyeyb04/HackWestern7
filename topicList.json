@@ -1,7 +1,11 @@
 [
   {
     "event": "BLM Toronto",
-    "tags": ["Social Justice", "Black Lives", "Protest"],
+    "tags": [
+      "Social Justice",
+      "Black Lives",
+      "Protest"
+    ],
     "location": "5444 Meadowcrest Avenue",
     "date": "February 29, 2021",
     "time": "5:00 pm",
@@ -40,6 +44,22 @@
   {
     "event": "BLM Amsterdam",
     "category": "Social Justice",
+    "location": "5444 Meadowcrest Avenue",
+    "date": "February 29, 2021",
+    "time": "5:00 pm",
+    "description": "This is an event",
+    "organizer": {
+      "name": "Dhyey Bhavsar",
+      "number": "123-456-7890"
+    }
+  },
+  {
+    "event": "BLM Berlin",
+    "tags": [
+      "Social Justice",
+      "Black Lives",
+      "Protest"
+    ],
     "location": "5444 Meadowcrest Avenue",
     "date": "February 29, 2021",
     "time": "5:00 pm",

@@ -1,5 +1,8 @@
 const express = require('express')
+const bodyParser = require('body-parser')
 const app = express()
+
+var jsonParser = bodyParser.json()
 
 var fs = require('fs');
 let data = fs.readFileSync('topicList.json');
@@ -97,3 +100,27 @@ app.get('/topics/:event/allPosts', (req, res) => {
   res.send(output);
 });
 
+app.post('/topics', jsonParser, (req, res) => {
+    let newSchedule = {
+      event: req.body.event,
+      tags: req.body.tags,
+      location: req.body.location,
+      date: req.body.date,
+      time: req.body.time,
+      description: req.body.description,
+      organizer: {
+        name: req.body.organizer.name,
+        number: req.body.organizer.number
+      }
+    };
+    topics.push(newSchedule);
+
+    let data = JSON.stringify(topics, null, 2);
+    fs.writeFile('topicList.json', data, finished);
+
+    function finished(err) {
+      console.log('New event added succssfully!');
+    }
+
+    res.send(newSchedule);
+});
