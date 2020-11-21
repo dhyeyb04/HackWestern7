@@ -143,3 +143,31 @@ app.post('/topics', jsonParser, (req, res) => {
     res.send(newEvent);
   }
 });
+
+app.delete('/topics/:event', (req, res) => {
+  let output = [];
+  let exsists = false;
+  let index = 0;
+
+  for (var i = 0; i < topics.length; i++) {
+    if (topics[i].event === req.params.event) {
+      exsists = true;
+      index = i;
+    }
+  }
+
+  if (exsists == false) {
+    return res.status(404).send("An event with the given name does not exsist.");
+  } else {
+    topics.splice(index, 1);
+
+    let data = JSON.stringify(topics, null, 2);
+    fs.writeFile('topicList.json', data, finished);
+
+    function finished(err) {
+      console.log('Event deleted succussfully!');
+    }
+
+    res.send(req.params.event);
+  }
+});
