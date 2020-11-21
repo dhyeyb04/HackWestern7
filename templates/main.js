@@ -1,5 +1,4 @@
-console.log("Hello");
-
+console.log("Dhyey is the best");
 
 function addTopic(){
 	console.log("Adding New Topic");
@@ -55,6 +54,15 @@ function addTopic(){
 	newTopicPostBody.appendChild(postLink2);
 
 	topicsHolder.appendChild(newTopicCard);
+}
 
+function findEvent(eventIn){
+	console.log("Let's find this event!");
+	let eventName = eventIn.getElementsByTagName("input")[0].value;
 
+	console.log(eventName);
+
+	fetch('/topics/' + eventName)
+		.then(response => response.json())
+		.then(data => console.log(data));
 }
