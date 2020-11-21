@@ -7,9 +7,11 @@
             "Photography",
             "Video Editing"
         ],
-        "followedPosts": [
-            2,
-            3
+        "eventsCreated": [
+            "BLM Toronto, Biden Rally Las Vegas, Ice Detention Protest"
+        ],
+        "eventsFollowed": [
+            "BLM NYC, Greenpeace Protest, Anti-NRA Rally"
         ]
     },
     {
@@ -20,9 +22,11 @@
             "Photography",
             "Video Editing"
         ],
-        "followedPosts": [
-            2,
-            3
+        "eventsCreated": [
+            "BLM NYC, Greenpeace Protest, Anti-NRA Rally"
+        ],
+        "eventsFollowed": [
+            "BLM LA, London Walk Out, Food Waste Drive"
         ]
     },
     {
@@ -33,9 +37,11 @@
             "Photography",
             "Video Editing"
         ],
-        "followedPosts": [
-            2,
-            3
+        "eventsCreated": [
+            "BLM LA, London Walk Out, Food Waste Drive"
+        ],
+        "eventsFollowed": [
+            "BLM Toronto, Biden Rally Las Vegas, Ice Detention Protest"
         ]
     }
 ]

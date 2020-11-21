@@ -113,6 +113,7 @@ app.post('/topics', jsonParser, (req, res) => {
     return res.status(401).send("A schedule with the given name already exsists!");
   } else {
     let newEvent = {
+      type: req.body.type,
       event: req.body.event,
       tags: req.body.tags,
       location: req.body.location,

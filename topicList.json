@@ -1,5 +1,6 @@
 [
   {
+    "type": "Racial Injustice",
     "event": "BLM Toronto",
     "tags": [
       "Social Justice",
@@ -17,6 +18,7 @@
     "members": ["Harsh Patel", "Nirmit Shah"]
   },
   {
+    "type": "Racial Injustice",
     "event": "BLM NYC",
     "tags": [
       "Social Justice",
@@ -37,6 +39,7 @@
     ]
   },
   {
+    "type": "Racial Injustice",
     "event": "BLM LA",
     "tags": [
       "Social Justice",
@@ -44,6 +47,132 @@
       "Protest"
     ],
     "location": "Hollywood",
+    "date": "February 29, 2021",
+    "time": "5:00 pm",
+    "description": "This is an event too!",
+    "organizer": {
+      "name": "Nirmit Shah",
+      "number": "123-456-7890"
+    },
+    "members": [
+      "Harsh Patel",
+      "Dhyey Bhavsar"
+    ]
+  },
+  {
+    "type": "Voting Rights",
+    "event": "Biden Rally Las Vegas",
+    "tags": [
+      "Social Justice",
+      "Black Lives",
+      "Protest"
+    ],
+    "location": "Bellagio Hotel",
+    "date": "February 29, 2021",
+    "time": "5:00 pm",
+    "description": "This is an event too!",
+    "organizer": {
+      "name": "Nirmit Shah",
+      "number": "123-456-7890"
+    },
+    "members": [
+      "Harsh Patel",
+      "Dhyey Bhavsar"
+    ]
+  },
+  {
+    "type": "Climate Change",
+    "event": "Greenpeace Protest",
+    "tags": [
+      "Social Justice",
+      "Black Lives",
+      "Protest"
+    ],
+    "location": "White House",
+    "date": "February 29, 2021",
+    "time": "5:00 pm",
+    "description": "This is an event too!",
+    "organizer": {
+      "name": "Nirmit Shah",
+      "number": "123-456-7890"
+    },
+    "members": [
+      "Harsh Patel",
+      "Dhyey Bhavsar"
+    ]
+  },
+  {
+    "type": "Healthcare",
+    "event": "London Walk OUt",
+    "tags": [
+      "Social Justice",
+      "Black Lives",
+      "Protest"
+    ],
+    "location": "Victoria Hospital",
+    "date": "February 29, 2021",
+    "time": "5:00 pm",
+    "description": "This is an event too!",
+    "organizer": {
+      "name": "Nirmit Shah",
+      "number": "123-456-7890"
+    },
+    "members": [
+      "Harsh Patel",
+      "Dhyey Bhavsar"
+    ]
+  },
+  {
+    "type": "Refugee Crisis",
+    "event": "ICE Detention Protest",
+    "tags": [
+      "Social Justice",
+      "Black Lives",
+      "Protest"
+    ],
+    "location": "El Paso",
+    "date": "February 29, 2021",
+    "time": "5:00 pm",
+    "description": "This is an event too!",
+    "organizer": {
+      "name": "Nirmit Shah",
+      "number": "123-456-7890"
+    },
+    "members": [
+      "Harsh Patel",
+      "Dhyey Bhavsar"
+    ]
+  },
+  {
+    "type": "Gun Violance",
+    "event": "Anti-NRA Rally",
+    "tags": [
+      "Social Justice",
+      "Black Lives",
+      "Protest"
+    ],
+    "location": "Washington DC",
+    "date": "February 29, 2021",
+    "time": "5:00 pm",
+    "description": "This is an event too!",
+    "organizer": {
+      "name": "Nirmit Shah",
+      "number": "123-456-7890"
+    },
+    "members": [
+      "Harsh Patel",
+      "Dhyey Bhavsar"
+    ]
+  },
+  {
+    "type": "Food Insecurity",
+    "event": "Food Waste Drive",
+    "tags": [
+      "Social Justice",
+      "Black Lives",
+      "Protest"
+    ],
+    "location": "The Needle",
     "date": "February 29, 2021",
     "time": "5:00 pm",
     "description": "This is an event too!",
