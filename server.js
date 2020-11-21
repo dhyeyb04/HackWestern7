@@ -35,9 +35,11 @@ app.get('/topics', (req, res) => {
 
   for (var i = 0; i < topics.length; i++) {
     output.push({
+      type: topics[i].type,
       event: topics[i].event,
       category: topics[i].category,
       description: topics[i].description,
+      organizer: topics[i].organizer,
     });
   }
 
@@ -49,9 +51,12 @@ app.get('/users', (req, res) => {
 
   for (var i = 0; i < users.length; i++) {
     output.push({
-      email: users[i].email,
-      password: users[i].password,
-      name: users[i].name
+      //email: users[i].email,
+      //password: users[i].password,
+      name: users[i].name,
+      skills: users[i].skills,
+      eventsCreated: users[i].eventsCreated,
+      eventsFollowed: users[i].eventsFollowed
     });
   }
 
@@ -64,6 +69,7 @@ app.get('/topics/:event', (req, res) => {
   for (var i = 0; i < topics.length; i++) {
     if (topics[i].event === req.params.event) {
       output.push({
+        type: topics[i].type,
         event: topics[i].event,
         category: topics[i].category,
         description: topics[i].description,
