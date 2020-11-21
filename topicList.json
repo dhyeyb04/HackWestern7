@@ -9,80 +9,51 @@
     "location": "5444 Meadowcrest Avenue",
     "date": "February 29, 2021",
     "time": "5:00 pm",
-    "description": "This is an event",
+    "description": "This is an event.",
     "organizer": {
       "name": "Dhyey Bhavsar",
       "number": "123-456-7890"
     },
-    "posts": [
-      {
-        "postID": 1,
-        "user": "Dhyey Bhavsar",
-        "content": "This is a post",
-        "followers": "Harsh Patel, Nirmit Shah"
-      },
-      {
-        "postID": 2,
-        "user": "Harsh Patel",
-        "content": "This is a second post",
-        "followers": "Dhyey Bhavsar, Nirmit Shah"
-      }
+    "members": ["Harsh Patel", "Nirmit Shah"]
+  },
+  {
+    "event": "BLM NYC",
+    "tags": [
+      "Social Justice",
+      "Black Lives",
+      "Protest"
+    ],
+    "location": "Central Park",
+    "date": "February 29, 2021",
+    "time": "5:00 pm",
+    "description": "This is also an event.",
+    "organizer": {
+      "name": "Harsh Patel",
+      "number": "123-456-7890"
+    },
+    "members": [
+      "Dhyey Bhavsar",
+      "Nirmit Shah"
     ]
   },
   {
-    "event": "BLM London",
-    "category": "Social Justice",
-    "location": "5444 Meadowcrest Avenue",
-    "date": "",
-    "time": "",
-    "description": "This is an event",
-    "organizer": {
-      "name": "Dhyey Bhavsar",
-      "number": "123-456-7890"
-    }
-  },
-  {
-    "event": "BLM Amsterdam",
-    "category": "Social Justice",
-    "location": "5444 Meadowcrest Avenue",
-    "date": "February 29, 2021",
-    "time": "5:00 pm",
-    "description": "This is an event",
-    "organizer": {
-      "name": "Dhyey Bhavsar",
-      "number": "123-456-7890"
-    }
-  },
-  {
-    "event": "BLM Berlin",
+    "event": "BLM LA",
     "tags": [
       "Social Justice",
       "Black Lives",
       "Protest"
     ],
-    "location": "5444 Meadowcrest Avenue",
+    "location": "Hollywood",
     "date": "February 29, 2021",
     "time": "5:00 pm",
-    "description": "This is an event",
+    "description": "This is an event too!",
     "organizer": {
-      "name": "Dhyey Bhavsar",
+      "name": "Nirmit Shah",
       "number": "123-456-7890"
-    }
-  },
-  {
-    "event": "BLM Tokyo",
-    "tags": [
-      "Social Justice",
-      "Black Lives",
-      "Protest"
-    ],
-    "location": "",
-    "date": "",
-    "time": "",
-    "description": "This is an event",
-    "organizer": {
-      "name": "",
-      "number": ""
-    }
+    },
+    "members": [
+      "Harsh Patel",
+      "Dhyey Bhavsar"
+    ]
   }
 ]

@@ -3,16 +3,39 @@
         "email": "dhyeybhavsar2000@gmail.com",
         "password": "Dhyey-2000",
         "name": "Dhyey Bhavsar",
-        "followedPosts": [2, 3]
+        "skills": [
+            "Photography",
+            "Video Editing"
+        ],
+        "followedPosts": [
+            2,
+            3
+        ]
     },
     {
         "email": "hpate45@gmail.com",
         "password": "HBGaming",
-        "name": "Harsh Patel"
+        "name": "Harsh Patel",
+        "skills": [
+            "Photography",
+            "Video Editing"
+        ],
+        "followedPosts": [
+            2,
+            3
+        ]
     },
     {
         "email": "nirmitshah@gmail.com",
         "password": "Jugli98",
-        "name": "Nirmit Shah"
+        "name": "Nirmit Shah",
+        "skills": [
+            "Photography",
+            "Video Editing"
+        ],
+        "followedPosts": [
+            2,
+            3
+        ]
     }
 ]
