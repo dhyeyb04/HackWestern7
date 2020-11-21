@@ -6,17 +6,13 @@ let data = fs.readFileSync('topicList.json');
 let topics = JSON.parse(data);
 let mans = fs.readFileSync('userList.json');
 let users = JSON.parse(mans);
-const port = 8800
+const port = 3000
 
 app.use(express.static(__dirname + '/templates'));
 
 app.get('/', (req, res) => {
 	res.sendFile(__dirname + '/index.html')
 
-});
-
-app.get('/featured', (req, res) => {
-  res.sendFile(__dirname + '/templates/featured.html')
 });
 
 app.listen(port, (err) => {
@@ -96,3 +92,4 @@ app.get('/topics/:event/allPosts', (req, res) => {
 
   res.send(output);
 });
+
