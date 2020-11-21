@@ -71,16 +71,18 @@ app.get('/topics/:event', (req, res) => {
   res.send(output);
 });
 
-app.get('/topics/:event/posts', (req, res) => {
+app.get('/topics/:event/allPosts', (req, res) => {
   let output = [];
 
   for (var i = 0; i < topics.length; i++) {
     if (topics[i].event === req.params.event) {
-      output.push({
-        event: topics[i].event,
-        category: topics[i].category,
-        description: topics[i].description,
-      });
+      for (var j = 0; j < topics[i].posts.length; j++) {
+        output.push({
+          postID: topics[i].posts[j].postID,
+          user: topics[i].posts[j].user,
+          content: topics[i].posts[j].content,
+        });
+      }
     }
   }
 
