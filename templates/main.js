@@ -55,6 +55,9 @@ function checkUser(){
 		})
 }
 
+function removeTopic(){
+	console.log("hell");
+}
 
 function newTopic(name){
 	var topicsHolder = document.getElementById("TopicsHolder");
@@ -71,8 +74,29 @@ function newTopic(name){
 	addButton.id = "addEventsButton";
 	addButton.innerHTML = "Create Event";
 
+	var unfollow = document.createElement("Button");
+	unfollow.id = "unfollowButton";
+	unfollow.innerHTML = "Unfollow";
+	unfollow.addEventListener("click", function(){
+  		newTopicCard.remove();
+  		url = window.location.href;
+		email = url.split("=");
+		email = email[1];
+		email = email.replace("%40","@");
+		console.log(email);
+
+		//EMAIL AND NAME OF TOPIC ARE GIVEN (VAR EMAIL AND VAR NAME RESPECTIVELY)
+		//open the userlist json file, iterate through all users until email matches
+		//when email matches access the topics followed list and match the index of
+		//the 'name' variable to a value in their list and then remove that index
+		//MAKE SURE YOURE REMOVING AND NOT JUST CHANGING THE INDEX TO BE ''
+
+
+	});
+
 	newTopicCard.appendChild(newCardHeader);
 	newCardHeader.appendChild(addButton);
+	newCardHeader.appendChild(unfollow);
 
 	var newCardBody = document.createElement("Div");
 	newCardBody.className = "card-body";
