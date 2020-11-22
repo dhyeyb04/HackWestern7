@@ -20,13 +20,29 @@ function checkUser(){
 				}
 			}
 
-			if (check != []) {
-				newTopic(topicNameGiven);
-				addEventsToCard(check);
-			} else {
-				newTopic(topicNameGiven);
-			}
-			// addTopic(data[0].description, data[0].event, data[0].type);
+			fetch('/topics/')
+			.then(response => response.json())
+			.then(data => {
+				var eventsToUse = [];
+				console.log(data);
+				for (var i = 0; i < check.length; i++){
+					for (var j = 0; j < data.length; j++){
+						if(data[j].topic.topicName == check[i]){
+							eventsToUse.push(data[j].topic.events)
+						}
+					}
+				}
+
+				for (var x = 0; x < check.length; x++){
+					newTopic(check[x]);
+					addEventsToCard(eventsToUse[x]);
+				}
+
+			})
+			.catch((error) => {
+	  			console.log(error);
+	  			// newTopic(topicNameGiven);
+	  		})
 
 		})
 		.catch((error) => {
