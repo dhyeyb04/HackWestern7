@@ -44,11 +44,7 @@ app.get('/topics', (req, res) => {
 
   for (var i = 0; i < topics.length; i++) {
     output.push({
-      type: topics[i].type,
-      event: topics[i].event,
-      category: topics[i].category,
-      description: topics[i].description,
-      organizer: topics[i].organizer,
+      topic: topics[i]
     });
   }
 
@@ -72,48 +68,76 @@ app.get('/users', (req, res) => {
   res.send(output);
 });
 
-app.get('/topics/:event', (req, res) => {
-  let output = [];
+// app.get('/topics/:event', (req, res) => {
+//   let output = [];
 
-  for (var i = 0; i < topics.length; i++) {
-    if (topics[i].event === req.params.event) {
-      output.push({
-        type: topics[i].type,
-        event: topics[i].event,
-        category: topics[i].category,
-        description: topics[i].description,
-      });
-    }
-  }
+//   for (var i = 0; i < topics.length; i++) {
+//     for (var j = 0; j < topics[i].events.length; j++) {
+//       if (topics[i].events[j].event === req.params.event) {
+//         output.push({
+//           event: topics[i].events[j].event,
+//           tags: topics[i].events[j].tags,
+//           description: topics[i].events[j].description,
+//           location: topics[i].events[j].location,
+//           date: topics[i].events[j].date,
+//           orginazer: topics[i].events[j].organizer,
+//           members: topics[i].events[j].members
+//         });
+//       }
+//     }
+//   }
 
-  if (output.length == 0) {
-    return res.status(404).send("The event with the given name was not found.");
-  }
+//   if (output.length == 0) {
+//     return res.status(404).send("The event with the given name was not found.");
+//   }
   
-  res.send(output);
-});
+//   res.send(output);
+// });
 
-app.get('/topics/:event/allPosts', (req, res) => {
+app.get('/topics/:topicName', (req, res) => {
   let output = [];
-
   for (var i = 0; i < topics.length; i++) {
-    if (topics[i].event === req.params.event) {
-      for (var j = 0; j < topics[i].posts.length; j++) {
+      if (topics[i].topicName === req.params.topicName) {
         output.push({
-          postID: topics[i].posts[j].postID,
-          user: topics[i].posts[j].user,
-          content: topics[i].posts[j].content,
+          events: topics[i].events
+          // tags: topics[i].events[j].tags,
+          // description: topics[i].events[j].description,
+          // location: topics[i].events[j].location,
+          // date: topics[i].events[j].date,
+          // orginazer: topics[i].events[j].organizer,
+          // members: topics[i].events[j].members
         });
       }
-    }
   }
 
   if (output.length == 0) {
-    return res.status(404).send("The course with the given subject code was not found.");
+    return res.status(404).send("The topic with the given name was not found.");
   }
 
   res.send(output);
 });
+
+// app.get('/topics/:event/allPosts', (req, res) => {
+//   let output = [];
+
+//   for (var i = 0; i < topics.length; i++) {
+//     if (topics[i].event === req.params.event) {
+//       for (var j = 0; j < topics[i].posts.length; j++) {
+//         output.push({
+//           postID: topics[i].posts[j].postID,
+//           user: topics[i].posts[j].user,
+//           content: topics[i].posts[j].content,
+//         });
+//       }
+//     }
+//   }
+
+//   if (output.length == 0) {
+//     return res.status(404).send("The course with the given subject code was not found.");
+//   }
+
+//   res.send(output);
+// });
 
 app.post('/topics', jsonParser, (req, res) => {
   let exsists = false;

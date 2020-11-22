@@ -1,5 +1,6 @@
 [
-  { "Black Lives Matter":
+  { "topicName":"Black",
+    "events":
     [
       {
         "event": "BLM Rally Toronto",
@@ -64,7 +65,9 @@
     ]
   },
   {
-    "Voting Rights": [
+    "topicName": "Voting Rights",
+    "events":
+    [
       {
         "type": "Voting Rights",
         "event": "Biden Rally Las Vegas",
@@ -89,7 +92,9 @@
     ]
   },
   {
-    "Climate Change": [
+    "topicName": "Climate Change",
+    "events":
+    [
       {
         "event": "Greenpeace Protest",
         "tags": [
@@ -113,7 +118,8 @@
     ]
   },
   {
-    "Healthcare": [
+    "topicName": "Healthcare",
+    "events": [
       {
         "event": "London Walk Out",
         "tags": [
@@ -137,7 +143,8 @@
     ]
   },
   {
-    "Refugee Crisis": [
+    "topicName": "Refugee Crisis",
+    "events": [
       {
         "event": "ICE Detention Protest",
         "tags": [
@@ -161,7 +168,8 @@
     ]
   },
   {
-    "Gun Violance": [
+    "topicName": "Gun Violence",
+    "events": [
       {
         "event": "Anti-NRA Rally",
         "tags": [
@@ -184,7 +192,8 @@
       }
     ]
   },{
-    "Food Insecurity": [
+    "topicName": "Food Insecurity",
+    "events": [
       {
         "type": "Food Insecurity",
         "event": "Food Waste Drive",
