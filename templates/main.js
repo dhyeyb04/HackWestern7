@@ -91,7 +91,7 @@ function newTopic(name){
 		//the 'name' variable to a value in their list and then remove that index
 		//MAKE SURE YOURE REMOVING AND NOT JUST CHANGING THE INDEX TO BE ''
 
-
+		
 	});
 
 	newTopicCard.appendChild(newCardHeader);
@@ -151,7 +151,15 @@ function addEventsToCard(events){
 		newTopicPostBody.appendChild(postLink2);
 
 		postLink1.addEventListener("click", function(){
-  			console.log("Harsh is actually the best");
+			console.log("Harsh is actually the best");
+			var yourMessage = "";
+			var subject = "";
+
+			subject = "BLM Event Photographer Available";
+			yourMessage = "Hello,\n\nI am a freelance photographer in London, Ontario and would be delighted to showcase the spirit and condor of the people around me in the BLM movement.I am a second year student in the FIMS program at Western University and as an advocate of social equality, I would truly appreciate an opportunity to devote my time to photograph this event to raise awareness and do my due diligence as a member of this society.\n\nThank you,\nDhyey Bhavsar";
+			document.location.href = "mailto:dhpatel1005@gmail.com?subject="
+				+ encodeURIComponent(subject)
+				+ "&body=" + encodeURIComponent(yourMessage);
 		});
 	}
 }

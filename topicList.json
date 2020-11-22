@@ -9,12 +9,12 @@
           "Black Lives",
           "Protest"
         ],
-        "location": "5444 Meadowcrest Avenue",
+        "location": "CN Tower",
         "date": "February 29, 2021",
         "time": "5:00 pm",
         "description": "This is an event.",
         "organizer": {
-          "name": "Dhyey Bhavsar",
+          "name": "Dhruv Patel",
           "number": "123-456-7890"
         },
         "members": [
