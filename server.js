@@ -26,9 +26,14 @@ app.get('/login', (req, res) => {
   res.sendFile(__dirname + '/templates/login.html')
 });
 
+app.get('/loginsuccess', (req, res) => {
+  res.sendFile(__dirname + '/templates/featured.html')
+});
+
 app.get('/signup', (req, res) => {
   res.sendFile(__dirname + '/templates/signup.html')
 });
+
 
 
 app.listen(port, (err) => {
