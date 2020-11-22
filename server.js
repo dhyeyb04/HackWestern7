@@ -22,6 +22,15 @@ app.get('/featured', (req, res) => {
   res.sendFile(__dirname + '/templates/featured.html')
 });
 
+app.get('/login', (req, res) => {
+  res.sendFile(__dirname + '/templates/login.html')
+});
+
+app.get('/signup', (req, res) => {
+  res.sendFile(__dirname + '/templates/signup.html')
+});
+
+
 app.listen(port, (err) => {
   if (err) {
     return console.log('Something bad happened...', err)

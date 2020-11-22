@@ -1,7 +1,6 @@
 console.log("Dhyey is the best");
 
-function addTopic(){
-	console.log("Adding New Topic");
+function addTopic(desc,eventName,tag){
 	var topicsHolder = document.getElementById("TopicsHolder");
 
 	var newTopicCard = document.createElement("Div");
@@ -33,19 +32,21 @@ function addTopic(){
 
 	var postTitle = document.createElement("h5");
 	postTitle.className = "card-title";
-	postTitle.innerHTML = "Sample Post Title";
+	postTitle.innerHTML = eventName;
 	var postSubtitle = document.createElement("h6");
 	postSubtitle.className = "card-subtitle mb-2 text-muted";
 	postSubtitle.innerHTML = "Sample Post subtitle";
 	var postDesc = document.createElement("p");
 	postDesc.className = "card-text";
-	postDesc.innerHTML = "Some quick example text to build on the post title and make up the bulk of the post's content.";
+	postDesc.innerHTML = desc;
 	var postLink1 = document.createElement("a");
 	postLink1.className = "card-link";
+	postLink1.id = "connectUser";
 	postLink1.innerHTML = "Join";
+
 	var postLink2 = document.createElement("a");
 	postLink2.className = "card-link";
-	postLink2.innerHTML = "Num of joinned users";
+	postLink2.innerHTML = "Followers";
 
 	newTopicPostBody.appendChild(postTitle);
 	newTopicPostBody.appendChild(postSubtitle);
@@ -54,15 +55,63 @@ function addTopic(){
 	newTopicPostBody.appendChild(postLink2);
 
 	topicsHolder.appendChild(newTopicCard);
+
+	postLink1.addEventListener("click", function(){
+  		console.log("Harsh is actually the best");
+	});
+
+}
+
+function newTopic(name){
+	var topicsHolder = document.getElementById("TopicsHolder");
+
+	var newTopicCard = document.createElement("Div");
+	newTopicCard.className = "card";
+	newTopicCard.id = "topic";
+
+	var newCardHeader = document.createElement("Div");
+	newCardHeader.className = "card-header";
+	newCardHeader.innerHTML = name;
+
+	newTopicCard.appendChild(newCardHeader);
+
+	var newCardBody = document.createElement("Div");
+	newCardBody.className = "card-body";
+	newCardBody.id = "cardTopicBody";
+
+	newTopicCard.appendChild(newCardBody);
+
+	topicsHolder.appendChild(newTopicCard);
+
 }
 
 function findEvent(eventIn){
 	console.log("Let's find this event!");
-	let eventName = eventIn.getElementsByTagName("input")[0].value;
 
-	console.log(eventName);
+	let topicName = eventIn.getElementsByTagName("input")[0].value;
 
-	fetch('/topics/' + eventName)
+	console.log(topicName);
+
+	fetch('/topics/' + topicName)
 		.then(response => response.json())
-		.then(data => console.log(data));
+		.then(data => {
+			
+			console.log(data);
+			addTopic(data[0].description, data[0].event, data[0].type);
+
+		})
+		.catch((error) => {
+  			console.log("error");
+  			newTopic(topicName);
+  		})
+		
 }
+
+
+
+
+
+
+
+
+
