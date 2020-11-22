@@ -1,60 +1,76 @@
 [
-    {
-        "email": "dhyeybhavsar2000@gmail.com",
-        "password": "Dhyey-2000",
-        "name": "Dhyey Bhavsar",
-        "skills": [
-            "Photography",
-            "Video Editing"
-        ],
-        "eventsCreated": [
-            "BLM Toronto",
-            "Biden Rally Las Vegas",
-            "Ice Detention Protest"
-        ],
-
-        "topicsFollowed": [
-            "Black Lives Matter",
-            "Climate Change",
-            "Gun Violence"
-        ]
-    },
-    {
-        "email": "hpate45@gmail.com",
-        "password": "HBGaming",
-        "name": "Harsh Patel",
-        "skills": [
-            "Photography",
-            "Video Editing"
-        ],
-        "eventsCreated": [
-            "BLM NYC",
-            "Greenpeace Protest",
-            "Anti-NRA Rally"
-        ],
-        "topicsFollowed": [
-            "Black Lives Matter",
-            "Climate Change",
-            "Gun Violence"
-        ]
-    },
-    {
-        "email": "nirmitshah@gmail.com",
-        "password": "Jugli98",
-        "name": "Nirmit Shah",
-        "skills": [
-            "Photography",
-            "Video Editing"
-        ],
-        "eventsCreated": [
-            "BLM LA",
-            "London Walk Out",
-            "Food Waste Drive"
-        ],
-        "topicsFollowed": [
-            "Black Lives Matter",
-            "Climate Change",
-            "Gun Violence"
-        ]
-    }
+  {
+    "email": "dhyeybhavsar2000@gmail.com",
+    "password": "Dhyey-2000",
+    "name": "Dhyey Bhavsar",
+    "skills": [
+      "Photography",
+      "Video Editing"
+    ],
+    "eventsCreated": [
+      "BLM Toronto",
+      "Biden Rally Las Vegas",
+      "Ice Detention Protest"
+    ],
+    "topicsFollowed": [
+      "Black Lives Matter",
+      "Climate Change",
+      "Gun Violence"
+    ]
+  },
+  {
+    "email": "hpate45@gmail.com",
+    "password": "HBGaming",
+    "name": "Harsh Patel",
+    "skills": [
+      "Photography",
+      "Video Editing"
+    ],
+    "eventsCreated": [
+      "BLM NYC",
+      "Greenpeace Protest",
+      "Anti-NRA Rally"
+    ],
+    "topicsFollowed": [
+      "Black Lives Matter",
+      "Climate Change",
+      "Gun Violence"
+    ]
+  },
+  {
+    "email": "nirmitshah@gmail.com",
+    "password": "Jugli98",
+    "name": "Nirmit Shah",
+    "skills": [
+      "Photography",
+      "Video Editing"
+    ],
+    "eventsCreated": [
+      "BLM LA",
+      "London Walk Out",
+      "Food Waste Drive"
+    ],
+    "topicsFollowed": [
+      "Black Lives Matter",
+      "Climate Change",
+      "Gun Violence"
+    ]
+  },
+  {
+    "email": "kairavi@gmail.com",
+    "password": "Desai99",
+    "name": "Kairavi Desai",
+    "skills": [
+      "Adobe XD",
+      "Bitcoin mining"
+    ],
+    "eventsCreated": [
+      "JD Camp"
+    ],
+    "topicsFollowed": [
+      "Black Lives Matter",
+      "Climate Change",
+      "Gun Violence"
+    ]
+  }
 ]

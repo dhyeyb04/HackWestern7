@@ -35,7 +35,6 @@ app.get('/signup', (req, res) => {
 });
 
 
-
 app.listen(port, (err) => {
   if (err) {
     return console.log('Something bad happened...', err)
@@ -179,6 +178,39 @@ app.post('/topics', jsonParser, (req, res) => {
     }
 
     res.send(newEvent);
+  }
+});
+
+app.post('/users', jsonParser, (req, res) => {
+  let exsists = false;
+
+  for (var i = 0; i < users.length; i++) {
+    if (users[i].name === req.body.name) {
+      exsists = true;
+    }
+  }
+
+  if (exsists == true) {
+    return res.status(401).send("A user with the given name already exsists!");
+  } else {
+    let newUser = {
+      email: req.body.email,
+      password: req.body.password,
+      name: req.body.name,
+      skills: req.body.skills,
+      eventsCreated: req.body.eventsCreated,
+      topicsFollowed: req.body.topicsFollowed
+    };
+    users.push(newUser);
+
+    let mans = JSON.stringify(users, null, 2);
+    fs.writeFile('userList.json', mans, finished);
+
+    function finished(err) {
+      console.log('New user added succssfully!');
+    }
+
+    res.send(newUser);
   }
 });
 
