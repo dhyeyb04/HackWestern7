@@ -9,10 +9,10 @@
           "Black Lives",
           "Protest"
         ],
-        "location": "CN Tower",
+        "location": "76 Geary Avenue, Toronto ON",
         "date": "February 29, 2021",
         "time": "5:00 pm",
-        "description": "This is an event.",
+        "description": "This is a protest to dismantle all forms of anti-Black racism, liberate Blackness, support Black healing, affirm Black existence, and create freedom to love and self-determine.",
         "organizer": {
           "name": "Dhruv Patel",
           "number": "123-456-7890"
@@ -32,7 +32,7 @@
         "location": "Central Park",
         "date": "February 29, 2021",
         "time": "5:00 pm",
-        "description": "This is also an event.",
+        "description": "We aim to eradicate white supremacy and build local power to intervene in violence inflicted on Black communities by the state and vigilantes.",
         "organizer": {
           "name": "Harsh Patel",
           "number": "123-456-7890"
@@ -52,7 +52,7 @@
         "location": "Hollywood",
         "date": "February 29, 2021",
         "time": "5:00 pm",
-        "description": "This is an event too!",
+        "description": "This is a protest to dismantle all forms of anti-Black racism and build local power to intervene in violence inflicted on Black communities.",
         "organizer": {
           "name": "Nirmit Shah",
           "number": "123-456-7890"
@@ -61,22 +61,6 @@
           "Harsh Patel",
           "Dhyey Bhavsar"
         ]
-      },
-      {
-        "event": "BLM Rally Tokyo",
-        "tags": [
-          "Social Justice",
-          "Black Lives",
-          "Protest"
-        ],
-        "location": "Mount Fuji",
-        "date": "February 29, 2021",
-        "time": "",
-        "description": "This is an event in Japan.",
-        "orginazer": {
-          "name": "Kairavi Desai",
-          "number": "123-456-7890"
-        }
       }
     ]
   },
@@ -85,7 +69,7 @@
     "events": [
       {
         "type": "Voting Rights",
-        "event": "Biden Rally Las Vegas",
+        "event": "Preseident-Elect Rally Las Vegas",
         "tags": [
           "Social Justice",
           "Black Lives",
@@ -153,6 +137,27 @@
           "Harsh Patel",
           "Dhyey Bhavsar"
         ]
+      },
+      {
+        "event": "Indigenious Healthcare Protest",
+        "tags": [
+          "Health",
+          "Indigenious",
+          "Protest",
+          "Aboriginal"
+        ],
+        "location": "Victoria Hospital",
+        "date": "February 29, 2021",
+        "time": "5:00 pm",
+        "description": "This is an event too!",
+        "organizer": {
+          "name": "Nirmit Shah",
+          "number": "123-456-7890"
+        },
+        "members": [
+          "Harsh Patel",
+          "Dhyey Bhavsar"
+        ]
       }
     ]
   },
@@ -161,6 +166,26 @@
     "events": [
       {
         "event": "ICE Detention Protest",
+        "tags": [
+          "Social Justice",
+          "Black Lives",
+          "Protest"
+        ],
+        "location": "El Paso",
+        "date": "February 29, 2021",
+        "time": "5:00 pm",
+        "description": "This is an event too!",
+        "organizer": {
+          "name": "Nirmit Shah",
+          "number": "123-456-7890"
+        },
+        "members": [
+          "Harsh Patel",
+          "Dhyey Bhavsar"
+        ]
+      },
+      {
+        "event": "Refugee Job Fair",
         "tags": [
           "Social Justice",
           "Black Lives",
