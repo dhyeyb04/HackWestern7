@@ -1,5 +1,3 @@
-console.log("Dhyey is the best");
-
 window.onload = checkUser();
 
 function checkUser(){
@@ -8,6 +6,33 @@ function checkUser(){
 	email = email[1];
 	email = email.replace("%40","@");
 	console.log(email);
+
+	fetch('/users')
+		.then(response => response.json())
+		.then(data => {
+
+			console.log(data);
+			var check = [];
+			for (var i = 0; i < data.length; i++) {
+				if (data[i].email == email) {
+					check = data[i].topicsFollowed;
+					break;
+				}
+			}
+
+			if (check != []) {
+				newTopic(topicNameGiven);
+				addEventsToCard(check);
+			} else {
+				newTopic(topicNameGiven);
+			}
+			// addTopic(data[0].description, data[0].event, data[0].type);
+
+		})
+		.catch((error) => {
+			console.log(error);
+			// newTopic(topicNameGiven);
+		})
 }
 
 
@@ -141,12 +166,7 @@ function addEventsToCard(events){
 		postLink1.addEventListener("click", function(){
   			console.log("Harsh is actually the best");
 		});
-
 	}
-	
-	
-
-
 }
 
 function findEvent(eventIn){

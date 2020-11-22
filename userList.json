@@ -8,11 +8,15 @@
             "Video Editing"
         ],
         "eventsCreated": [
-            "BLM Toronto, Biden Rally Las Vegas, Ice Detention Protest"
+            "BLM Toronto",
+            "Biden Rally Las Vegas",
+            "Ice Detention Protest"
         ],
 
         "topicsFollowed": [
-            "BLM NYC, Greenpeace Protest, Anti-NRA Rally"
+            "Black Lives Matter",
+            "Climate Change",
+            "Gun Violence"
         ]
     },
     {
@@ -24,10 +28,14 @@
             "Video Editing"
         ],
         "eventsCreated": [
-            "BLM NYC, Greenpeace Protest, Anti-NRA Rally"
+            "BLM NYC",
+            "Greenpeace Protest",
+            "Anti-NRA Rally"
         ],
-        "eventsFollowed": [
-            "BLM LA, London Walk Out, Food Waste Drive"
+        "topicsFollowed": [
+            "Black Lives Matter",
+            "Climate Change",
+            "Gun Violence"
         ]
     },
     {
@@ -39,10 +47,14 @@
             "Video Editing"
         ],
         "eventsCreated": [
-            "BLM LA, London Walk Out, Food Waste Drive"
+            "BLM LA",
+            "London Walk Out",
+            "Food Waste Drive"
         ],
-        "eventsFollowed": [
-            "BLM Toronto, Biden Rally Las Vegas, Ice Detention Protest"
+        "topicsFollowed": [
+            "Black Lives Matter",
+            "Climate Change",
+            "Gun Violence"
         ]
     }
 ]

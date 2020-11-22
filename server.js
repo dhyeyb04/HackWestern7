@@ -61,12 +61,12 @@ app.get('/users', (req, res) => {
 
   for (var i = 0; i < users.length; i++) {
     output.push({
-      //email: users[i].email,
+      email: users[i].email,
       //password: users[i].password,
       name: users[i].name,
       skills: users[i].skills,
       eventsCreated: users[i].eventsCreated,
-      eventsFollowed: users[i].eventsFollowed
+      topicsFollowed: users[i].topicsFollowed
     });
   }
 
