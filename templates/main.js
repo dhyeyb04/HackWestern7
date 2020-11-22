@@ -1,5 +1,16 @@
 console.log("Dhyey is the best");
 
+window.onload = checkUser();
+
+function checkUser(){
+	url = window.location.href;
+	email = url.split("=");
+	email = email[1];
+	email = email.replace("%40","@");
+	console.log(email);
+}
+
+
 function addTopic(desc,eventName,tag){
 	var topicsHolder = document.getElementById("TopicsHolder");
 
@@ -97,7 +108,7 @@ function findEvent(eventIn){
 		.then(data => {
 			
 			console.log(data);
-			addTopic(data[0].description, data[0].event, data[0].type);
+			// addTopic(data[0].description, data[0].event, data[0].type);
 
 		})
 		.catch((error) => {
