@@ -143,31 +143,62 @@ app.get('/topics/:topicName', (req, res) => {
 //   res.send(output);
 // });
 
-app.post('/topics', jsonParser, (req, res) => {
-  let exsists = false;
+app.post('/topics/:event', jsonParser, (req, res) => {
+  let topicExsists = false;
+  let eventExsists = false;
 
   for (var i = 0; i < topics.length; i++) {
-    if (topics[i].event === req.body.event) {
-      exsists = true;
+    if (topics[i].topicName == req.body.topicName) {
+      topicExsists = true;
+    }
+    for (var j = 0; j < topics[i].events.length; j++) {
+      if (topics[i].events[j].event === req.params.event) {
+        eventExsists = true;
+      }
     }
   }
 
-  if (exsists == true) {
-    return res.status(401).send("A schedule with the given name already exsists!");
-  } else {
+  if (topicExsists && eventExsists == true) {
+    return res.status(401).send("A event with the given name already exsists in this topic!");
+  } else if (topicExsists == true) {
     let newEvent = {
-      type: req.body.type,
       event: req.body.event,
       tags: req.body.tags,
       location: req.body.location,
       date: req.body.date,
       time: req.body.time,
       description: req.body.description,
-      organizer: {
-        name: req.body.organizer.name,
-        number: req.body.organizer.number
-      }
+      orginazer: req.body.organizer,
+      members: req.body.members
     };
+
+    for (var i = 0; i < topics.length; i++) {
+      if (topics[i].topicName == req.body.topicName) {
+        topics[i].events.push(newEvent);
+      }
+    }
+
+    let data = JSON.stringify(topics, null, 2);
+    fs.writeFile('topicList.json', data, finished);
+
+    function finished(err) {
+      console.log('New event added succssfully!');
+    }
+
+    res.send(newEvent);
+  } else {
+    let newEvent = {
+      topicName: req.body.topicName,
+      event: req.body.event,
+      tags: req.body.tags,
+      location: req.body.location,
+      date: req.body.date,
+      time: req.body.time,
+      description: req.body.description,
+      orginazer: req.body.organizer,
+      members: req.body.members
+    };
+
     topics.push(newEvent);
 
     let data = JSON.stringify(topics, null, 2);
