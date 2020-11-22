@@ -73,6 +73,9 @@ function newTopic(name){
 	var addButton = document.createElement("Button");
 	addButton.id = "addEventsButton";
 	addButton.innerHTML = "Create Event";
+	addButton.addEventListener("click", function(){
+		console.log("dfjasdf");
+	});
 
 	var unfollow = document.createElement("Button");
 	unfollow.id = "unfollowButton";
